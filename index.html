@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container mt-5 pt-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#bai1" role="tab" aria-controls="home" aria-selected="true">Bài 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#bai2" role="tab" aria-controls="profile" aria-selected="false">Bài 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#bai3" role="tab" aria-controls="contact" aria-selected="false">Bài 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#bai4" role="tab" aria-controls="profile" aria-selected="false">Bài 4</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#bai5" role="tab" aria-controls="contact" aria-selected="false">Bài 5</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <!-- Bai 1 -->
+            <div class="tab-pane fade show active" id="bai1" role="tabpanel" aria-labelledby="home-tab">
+                <div class="form-group">
+                  <label for="">Nhập lương một ngày</label>
+                  <input type="number" name="" id="oneDaySalary" class="form-control" placeholder="" aria-describedby="helpId">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Số ngày làm</label>
+                    <input type="number" name="" id="workDays" class="form-control" placeholder="" aria-describedby="helpId">
+                </div>
+
+                <button type="button" id="bai1" class="btn btn-primary">Tính lương</button>
+                <div class="alert alert-dark mt-2" role="alert">
+                    👉<span id="txtSalary"></span>
+                </div>
+            </div>
+
+            <!-- Bai 2 -->
+            <div class="tab-pane fade" id="bai2" role="tabpanel" aria-labelledby="home-tab">
+                <div class="form-group">
+                  <input type="number" name="" id="number1" class="form-control" placeholder="Nhập số thứ 1" aria-describedby="helpId">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="" id="number2" class="form-control" placeholder="Nhập số thứ 2" aria-describedby="helpId">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="" id="number3" class="form-control" placeholder="Nhập số thứ 3" aria-describedby="helpId">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="" id="number4" class="form-control" placeholder="Nhập số thứ 4" aria-describedby="helpId">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="" id="number5" class="form-control" placeholder="Nhập số thứ 5" aria-describedby="helpId">
+                </div>
+
+                <button type="button" id="bai2" class="btn btn-primary">Tính trung bình</button>
+                <div class="alert alert-dark mt-2" role="alert">
+                    👉<span id="txtSalary2"></span>
+                </div>
+            </div>
+
+            <!-- Bai 3 -->
+            <div class="tab-pane fade" id="bai3" role="tabpanel" aria-labelledby="home-tab">
+                <div class="form-group">
+                    <input type="number" name="" id="vnd-money" class="form-control" placeholder="Nhập số tiền USD" aria-describedby="helpId">
+                </div>
+  
+                  <button type="button" id="bai3" class="btn btn-primary">Đổi tiền</button>
+                  <div class="alert alert-dark mt-2" role="alert">
+                      👉<span id="txtSalary3"></span>
+                  </div>
+            </div>
+
+            <!-- Bài 4 -->
+            <div class="tab-pane fade" id="bai4" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="form-group">
+                    <input type="number" name="" id="lengthRectangle" class="form-control" placeholder="Nhập chiều dài" aria-describedby="helpId">
+                </div>
+
+                <div class="form-group">
+                    <input type="number" name="" id="widthRectangle" class="form-control" placeholder="Nhập chiều rộng" aria-describedby="helpId">
+                </div>
+
+                  <button type="button" id="bai4" class="btn btn-primary">Tính</button>
+                  <div class="alert alert-dark mt-2" role="alert">
+                      👉<span id="txtSalary4"></span>
+                  </div>
+            </div>
+
+            <!-- Bài 5 -->
+            <div class="tab-pane fade" id="bai5" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="form-group">
+                    <input type="number" name="" id="towNumber" class="form-control" placeholder="Nhập chiều dài" aria-describedby="helpId">
+                </div>
+
+                  <button type="button" id="bai5" class="btn btn-primary">Tính</button>
+                  <div class="alert alert-dark mt-2" role="alert">
+                      👉<span id="txtSalary5"></span>
+                  </div>
+            </div>
+          </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="./main.js"></script>
+    </body>
+</html>
